@@ -143,3 +143,29 @@ main {
         max-width: 150px; /* Diminui a logo em telas menores */
     }
 }
+
+/* Ajuste da parte de economia */
+
+/* Estilo da seção Economia (article) */
+article#Economia {
+    display: flex;
+}
+
+/* Estilo do texto dentro do artigo Economia */
+article#Economia p {
+    flex: 1; /* O texto ocupa o restante do espaço */
+    font-size: 16px;
+    color: #333;
+    justify-content: left;
+}
+
+/* Estilo da imagem do mapa */
+#Itabiramapa {
+    width: 20%; /* Ajusta a largura da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    object-fit: cover; /* Garante que a imagem se ajuste bem */
+    border-radius: 8px; /* Adiciona borda arredondada */
+    margin-left: 20px; /* Adiciona espaçamento à esquerda da imagem para garantir que não fique colado no texto */
+    justify-content: right;
+    padding-top: 3%;
+}
