@@ -5,35 +5,59 @@
     box-sizing: border-box;
 }
 
+/* Animação para o scroll suave */
+html {
+    scroll-behavior: smooth;
+}
+
 /* Estilizando o corpo do site */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
-}
-/* Logo Itabira */
-.logo {
-    color: #fff;
-    font-size: 30px;
-    font-weight: bold;
-    margin-right: auto; /* Faz o título ficar à esquerda */
-    text-transform: uppercase;
+    display: flex;
+    justify-content: center;  /* Centraliza horizontalmente */
+    align-items: flex-start;  /* Alinha ao topo da página */
+    min-height: 100vh;  /* Garante que o conteúdo ocupe toda a altura da tela */
+    padding: 20px;  /* Espaçamento nas laterais */
+    flex-direction: column;  /* Garante que o conteúdo fique em uma única coluna */
 }
 
-/* Estilizando o nav */
+/* Estilo da navegação */
 nav {
-    background-color: #2d3e50; /* Cor de fundo escura */
-    padding: 10px 0;
-    text-align: center;
+    background-color: #2d3e50;
+    padding: 15px 0;
+    width: 100%;
+    margin-bottom: 20px;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.nav-container {
+    max-width: 1200px;  /* Limita o tamanho da barra de navegação */
+    margin: 0 auto;  /* Centraliza o conteúdo dentro da navegação */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav h1.logo {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
 }
 
 nav ul {
     list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 nav ul li {
     display: inline-block;
-    margin-right: 20px;
 }
 
 nav ul li a {
@@ -51,27 +75,27 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
-/* Animação para o scroll suave */
-html {
-    scroll-behavior: smooth;
-}
-
-/* Adicionando um espaçamento para o conteúdo principal */
-main {
-    margin-top: 20px;
-    padding: 20px;
-}
-
-/* Estilizando o cabeçalho dos artigos */
-h1 {
-    font-size: 28px;
-    color: #333;
-    margin-bottom: 15px;
-}
-
 /* Estilo dos artigos */
 article {
     margin-bottom: 30px;
+}
+
+/* Estilo dos cabeçalhos */
+h1 {
+    font-size: 28px;
+    color: #2d3e50;
+    margin-bottom: 15px;
+}
+
+/* Estilizando o main para ficar centralizado */
+main {
+    width: 100%;
+    max-width: 1200px; /* Limita a largura do conteúdo principal */
+    margin: 0 auto;  /* Centraliza o conteúdo do main */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
 /* Estilo das imagens dentro dos cards */
@@ -102,11 +126,20 @@ article {
     color: #666;
 }
 
-/* Alinhamento do conteudo do site main */ 
+/* Logo Itabira */
 
-main {
-    text-align: center;
-    border-right-color: #ffffff;
-    border-right: 15rem  solid hsla(340, 3%, 60%, 0.29);
-    border-left: 15rem   solid hsla(347, 4%, 39%, 0.29);
+
+#logoitabira {
+    max-width: 200px; /* Limita a largura máxima da logo */
+    height: auto; /* Mantém a proporção original da logo */
+    display: block; /* Garante que a logo seja tratada como um bloco */
+    margin-right: 20px; /* Dá um espaçamento à direita da logo */
+    margin-top: 5px; /* Ajuste fino para alinhar a logo */
+}
+
+/* Ajuste responsivo - caso a tela seja muito pequena */
+@media screen and (max-width: 768px) {
+    #logoitabira {
+        max-width: 150px; /* Diminui a logo em telas menores */
+    }
 }
