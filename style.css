@@ -5,6 +5,15 @@
     box-sizing: border-box;
 }
 
+article p {
+    margin-top: 15px;
+}
+
+p::first-letter {
+    margin-left: 10px;
+
+}
+
 /* Animação para o scroll suave */
 html {
     scroll-behavior: smooth;
