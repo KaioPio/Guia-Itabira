@@ -4,6 +4,9 @@
         <title>Itabira</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="style.css">
+        <html lang="pt-br">
+        <script src="script.js" defer></script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     </head>
     <body>
         <nav>
@@ -11,26 +14,32 @@
                 <img src="Fontes-Imagens/logoitabira.png" id="logoitabira">
                 <ul>
                     <li class="nav-item">
-                        <a class="nav-link" hef="#historia">Historia</a>
+                        <a class="nav-link" href="#Historia">Historia</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" hef="#CarlosDrummond">Carlos Drummond</a>
+                        <a class="nav-link" href="#CarlosDrummond">Carlos Drummond</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" hef="#Economia">Economia</a>
+                        <a class="nav-link" href="#Economia">Economia</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" hef="#Culinaria">Culinaria</a>
+                        <a class="nav-link" href="#Culinaria">Culinaria</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" hef="#PTuristico">Pontos Turisticos</a>
+                        <a class="nav-link" href="#PTuristico">Pontos Turisticos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" hef="#historia">Hoteis</a>
+                        <a class="nav-link" href="#Hoteis">Hoteis</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Agenda">Agenda</a>
                     </li>
                 </ul>
             </div>
         </nav>
+        <article>
+            <a href="#logoitabira" class="botao-flutuante z-index"><img class="logohome" src="Fontes-Imagens/dev-icon-183.svg" alt="">Inicio</a>
+        </article>
         <main>
             <article class="sitebemvindo">
                 <p>   Ficamos felizes em receber você, que está prestes a explorar a encantadora cidade de Itabira! Aqui, você encontrará tudo o que precisa saber para aproveitar ao máximo sua visita.</p>
@@ -47,12 +56,96 @@
                       tornando-se um destino turístico repleto de beleza e cultura.</p>
             </article>
             <article>
-                <h1 class="#CarlosDrummond">Carlos Drummond</h1>
+                <div id="carousel" class="carousel-container">
+                    <div class="carousel-images">
+                        <img src="Fontes-Imagens/historia1.jpg" alt="Imagem 1" class="carousel-item">
+                        <img src="Fontes-Imagens/historia2.webp" alt="Imagem 2" class="carousel-item">
+                        <img src="Fontes-Imagens/historia3.webp" alt="Imagem 3" class="carousel-item">
+                        <img src="Fontes-Imagens/historia4.webp" alt="Imagem 4" class="carousel-item">
+                        <img src="Fontes-Imagens/historia5.jpg" alt="Imagem 5" class="carousel-item">
+                    </div>
+                    <button class="carousel-button prev" onclick="moveSlide(-1)">&#10094;</button>
+                    <button class="carousel-button next" onclick="moveSlide(1)">&#10095;</button>
+                </div>
+            </article>
+            <article>
+                <h1 id="CarlosDrummond">Carlos Drummond</h1>
                 <p>Carlos Drummond de Andrade, um dos maiores poetas brasileiros, nasceu em Itabira, Minas Gerais, e deixou um legado literário marcante. Sua poesia, marcada pela sensibilidade e uma linguagem acessível, transformava o cotidiano em arte, abordando temas como amor, solidão, política e a condição humana. Influenciado pelo Modernismo, 
                     mas transcendendo qualquer escola literária, ele explorou a relação entre o indivíduo e a sociedade, refletindo sobre as angústias existenciais e as transformações do Brasil ao longo do século XX. Obras como A Rosa do Povo e poemas icônicos como No Meio do Caminho consolidaram sua importância na literatura nacional.</p>
                 <p>Além de poeta, Drummond foi cronista e jornalista, contribuindo significativamente para a cultura brasileira. Seu legado permanece vivo na poesia contemporânea, sendo amplamente estudado e homenageado. Sua cidade natal, Itabira, celebra sua memória com diversos pontos turísticos,
                     como a Casa de Drummond e o Memorial Carlos Drummond de Andrade. Falecido em 1987, seu trabalho continua a inspirar gerações, oferecendo uma reflexão profunda sobre a existência humana e o Brasil, reforçando sua posição como um dos maiores escritores do país.</p>
-            </article>
+                <img src="Fontes-Imagens/carlos-drummond-de-andrade-.webp" id="carlos-drummond-de-andrade">
+                </article>
+                <article>
+                    <h1 id="PTuristico">Pontos Turísticos</h1>
+                    <div class="card-container">
+                        <div class="card">
+                            <img src="Fontes-Imagens/Memorial_Drummond.jpg" alt="Memorial Carlos Drummond de Andrade">
+                            <div class="titulo">Memorial Carlos Drummond de Andrade</div>
+                            <div class="descricao">O Memorial celebra a vida e obra do poeta Carlos Drummond de Andrade, com exposições interativas sobre sua trajetória e influência na literatura brasileira.</div>
+                            <div class="card-buttons">
+                                <a href="https://www.google.com/maps/place/Memorial+Carlos+Drummond+de+Andrade/@-19.6160632,-43.2239515,17z/data=!3m1!4b1!4m6!3m5!1s0xa5a1c85fd43181:0x22de9ca4d736c4ef!8m2!3d-19.6160632!4d-43.2213766!16s%2Fg%2F1yfjky99s?entry=ttu&g_ep=EgoyMDI1MDIwNS4xIKXMDSoASAFQAw%3D%3D" target="_blank" class="btn-location">
+                                    <i class="fas fa-map-marker-alt"></i> Localização
+                                </a>
+                            </div>
+                        </div>
+                
+                        <div class="card">
+                            <img src="Fontes-Imagens/Cachoeira-da-Coca-Cola.jpg.webp" alt="Serra dos Alves">
+                            <div class="titulo">Serra dos Alves</div>
+                            <div class="descricao">Um dos destinos mais belos de Itabira, a Serra dos Alves oferece trilhas ecológicas, cachoeiras e uma vista deslumbrante da região.</div>
+                            <div class="card-buttons">
+                                <a href="https://www.google.com/maps/place/Serra+dos+Alves,+Itabira+-+MG/@-19.5097272,-43.4597615,17z/data=!3m1!4b1!4m6!3m5!1s0xa59513246709c7:0x7bf9035447027288!8m2!3d-19.5097379!4d-43.4575576!16s%2Fg%2F11b72slrb_?entry=ttu&g_ep=EgoyMDI1MDIwNS4xIKXMDSoASAFQAw%3D%3D" target="_blank" class="btn-location">
+                                    <i class="fas fa-map-marker-alt"></i> Localização
+                                </a>
+                            </div>
+                        </div>
+                
+                        <div class="card">
+                            <img src="Fontes-Imagens/fazendapontal.jpg" alt="Fazenda do Pontal">
+                            <div class="titulo">Pontal Centro Cultural Fazenda</div>
+                            <div class="descricao">Localizado próximo ao centro da cidade, o Pico do Amor proporciona uma vista panorâmica de Itabira, sendo um local perfeito para apreciar o pôr do sol e realizar atividades culturais.</div>
+                            <div class="card-buttons">
+                                <a href="https://www.google.com/maps/place/Serra+dos+Alves,+Itabira+-+MG/@-19.5097272,-43.4597615,17z/data=!3m1!4b1!4m6!3m5!1s0xa59513246709c7:0x7bf9035447027288!8m2!3d-19.5097379!4d-43.4575576!16s%2Fg%2F11b72slrb_?entry=ttu&g_ep=EgoyMDI1MDIwNS4xIKXMDSoASAFQAw%3D%3D" target="_blank" class="btn-location">
+                                    <i class="fas fa-map-marker-alt"></i> Localização
+                                </a>
+                            </div>
+                        </div>
+                
+                        <div class="card">
+                            <img src="Fontes-Imagens/picodoamor.jpg" alt="Pico do Amor">
+                            <div class="titulo">Pico do Amor</div>
+                            <div class="descricao">Localizado próximo ao centro da cidade, o Pico do Amor proporciona uma vista panorâmica de Itabira, sendo um local perfeito para apreciar o pôr do sol e realizar atividades culturais.</div>
+                            <div class="card-buttons">
+                                <a href="https://www.google.com/maps/place/pico+do+amor+itabira/data=!4m2!3m1!1s0xa5a1b987d6684b:0xd3b913af39be87c5?sa=X&ved=1t:155783&ictx=111" target="_blank" class="btn-location">
+                                    <i class="fas fa-map-marker-alt"></i> Localização
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="Fontes-Imagens/museudotropeiro.jpg" alt="Museu Do Tropeiro">
+                            <div class="titulo">Museu do Tropeiro</div>
+                            <div class="descricao">Localizado no distrito de Ipoema, o museu resgata a história dos tropeiros que atravessavam a região, exibindo um acervo de aproximadamente 400 peças relacionadas ao tropeirismo.</div>
+                            <div class="card-buttons">
+                                <a href="https://www.google.com/maps/place/Museu+do+Tropeiro/@-19.621992,-43.4368859,17z/data=!3m1!4b1!4m6!3m5!1s0xa5b93a95411995:0xa251b8bd36dcdf27!8m2!3d-19.621992!4d-43.434311!16s%2Fg%2F1ydnqfds6?entry=ttu&g_ep=EgoyMDI1MDIwNS4xIKXMDSoASAFQAw%3D%3D" target="_blank" class="btn-location">
+                                    <i class="fas fa-map-marker-alt"></i> Localização
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="Fontes-Imagens/Cachoeira Alta.jpg" alt="Cachoeira Alta">
+                            <div class="titulo">Cachoeira Alta</div>
+                            <div class="descricao">Também situada em Ipoema, esta cachoeira impressiona com uma queda d'água de cerca de 110 metros, sendo um destino popular para os amantes da natureza e praticantes de esportes ao ar livre.</div>
+                            <div class="card-buttons">
+                                <a href="https://www.google.com/maps/place/Cachoeira+Alta/@-19.5792061,-43.4988353,17z/data=!3m1!4b1!4m6!3m5!1s0xa5c19757dd863d:0x6458105622ec18cd!8m2!3d-19.5792062!4d-43.4939644!16s%2Fg%2F11g_v724gr?entry=ttu&g_ep=EgoyMDI1MDIwNS4xIKXMDSoASAFQAw%3D%3D" target="_blank" class="btn-location">
+                                    <i class="fas fa-map-marker-alt"></i> Localização
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                
             <article >
                 <h1 id="Economia">Economia</h1>
                 <p>Conhecida como “Cidade do Ferro”, Itabira é o berço da Companhia Vale do Rio Doce, chamada atualmente de Vale. A empresa foi criada, há mais de meio século, para extrair do local a hematita, minério com altíssimo teor de ferro. A exportação do ferro para vários países é a base da economia do município. Aproximadamente 60% da renda da cidade vêm da atividade minerária", informa o antigo prefeito, João Izael.
@@ -63,41 +156,184 @@
                 <p>O projeto visa ainda estimular o desenvolvimento sustentável do município, que se prepara para enfrentar os impactos do fim da exploração de minérios, a partir de 2028. Após mais de 60 anos atuando na região, a saída da mineradora Vale do município alerta para a necessidade de se traçar novos rumos para o desenvolvimento socioeconômico e sustentável de Itabira.</p>
             </article>
             <article>
-                <h1 class="Culinaria">Culinaria</h1>
+                <h1 id="Culinaria">Culinaria</h1>
                 <p>Itabira do Mato Dentro, com mais de 300 anos de história, se destaca não apenas pelo seu passado ligado à mineração, mas também pela rica cultura e gastronomia mineira. A cidade combina desenvolvimento econômico e industrial com um forte cenário cultural, onde música, teatro e tradições gastronômicas desempenham um papel essencial na vida dos habitantes. Sua culinária é um reflexo dessa herança, oferecendo pratos típicos como Feijão Tropeiro e Pão de Queijo de alta qualidade, além dos famosos doces mineiros, como goiabada e doce de leite, encontrados em mercados e restaurantes locais.</p>
                 <p>Eventos como o Festival Gastronômico de Itabira e o Circuito do Sabor reforçam a identidade culinária da cidade, promovendo oficinas, concursos e a participação de chefs renomados. Além de destacar os sabores típicos, esses festivais impulsionam o turismo e a economia local, valorizando os produtores e a tradição mineira. Para quem deseja explorar a gastronomia da cidade, locais como o Restaurante Dona Dita, o Café da Esquina e a Churrascaria do Beto são paradas obrigatórias. Assim, visitar Itabira é uma oportunidade de vivenciar não apenas sua história e cultura, mas também os autênticos sabores da cozinha mineira.</p>
-                Obs: Colocar fotos 
-                obs: Fazer cards com os restaurantes
             </article>
             <article>
-                <div class="card">
-                    <img src="Img/Conteudo/Bloquinho.png" height="264.809px" width="333.056px" alt="Bloquinho">
-                    <div class="titulo">Restaurante Vide Gula</div>
-                    <div class="descricao">O Restaurante Vide Gula combina sabor, tradição e um ambiente acolhedor. Com um cardápio variado e atendimento impecável. </div>
-                    <div class="local">Endereço: Rua Tiradentes, 113 - Centro, Itabira - MG, 35900-013</div>
-                    <div class="local"> Instagram: @videgula_</div>
-                </div>
-                <div class="card">
-                    <img src="Img/Conteudo/Bloquinho.png" height="264.809px" width="333.056px" alt="Bloquinho">
-                    <div class="titulo">O Tonel</div>
-                    <div class="descricao">O Tonel combina boa comida, bebidas selecionadas e um ambiente aconchegante para momentos inesquecíveis. </div>
-                    <div class="local"> Endereço: Rua Padre Olímpio, 144 - Centro, Itabira - MG, 35900-014</div>
-                    <div class="local">  Instagram: @otonel.chopperia
+                <div class="card-container">
+                    <div class="card">
+                        <img src="Fontes-Imagens/videgula.jpg" alt="Vide Gula">
+                        <div class="titulo">Restaurante Vide Gula</div>
+                        <div class="descricao">O Restaurante Vide Gula combina sabor, tradição e um ambiente acolhedor. Com um cardápio variado e atendimento impecável.</div>
+                        <div class="local">Endereço: Rua Tiradentes, 113 - Centro, Itabira - MG, 35900-013</div>
+                        <div class="local">Instagram: @videgula_</div>
+                        <div class="card-buttons">
+                            <a href="https://goo.gl/maps/2bR1Bbrv1TqYPd7P7" target="_blank" class="btn-location">
+                                <i class="fas fa-map-marker-alt"></i> Localização
+                            </a>
+                            <a href="https://www.instagram.com/videgula_" target="_blank" class="btn-instagram">
+                                <i class="fab fa-instagram"></i> Instagram
+                            </a>
+                        </div>
+                    </div>
+            
+                    <div class="card">
+                        <img src="Fontes-Imagens/tonel.jpg" alt="O Tonel">
+                        <div class="titulo">O Tonel</div>
+                        <div class="descricao">O Tonel combina boa comida, bebidas selecionadas e um ambiente aconchegante para momentos inesquecíveis.</div>
+                        <div class="local">Endereço: Rua Padre Olímpio, 144 - Centro, Itabira - MG, 35900-014</div>
+                        <div class="local">Instagram: @otonel.chopperia</div>
+                        <div class="card-buttons">
+                            <a href="https://goo.gl/maps/F6Zv8JczbQKc28dX9" target="_blank" class="btn-location">
+                                <i class="fas fa-map-marker-alt"></i> Localização
+                            </a>
+                            <a href="https://www.instagram.com/otonel.chopperia" target="_blank" class="btn-instagram">
+                                <i class="fab fa-instagram"></i> Instagram
+                            </a>
+                        </div>
+                    </div>
+            
+                    <div class="card">
+                        <img src="Fontes-Imagens/reea-design-Trattoria-di-Prima-Restaurante-e-Scotch-Bar.jpg" alt="Trattoria De Prima">
+                        <div class="titulo">Trattoria De Prima Restaurante e Scotch Bar</div>
+                        <div class="descricao">A Trattoria De Prima Restaurante e Scotch Bar une a autêntica culinária italiana a drinques sofisticados em um ambiente elegante e aconchegante.</div>
+                        <div class="local">Endereço: Rua Minervino Betônico, 107 - para, Itabira - MG, 35900-036</div>
+                        <div class="local">Instagram: @trattoriadiprima</div>
+                        <div class="card-buttons">
+                            <a href="https://goo.gl/maps/qy8jft5aRs32" target="_blank" class="btn-location">
+                                <i class="fas fa-map-marker-alt"></i> Localização
+                            </a>
+                            <a href="https://www.instagram.com/trattoriadiprima" target="_blank" class="btn-instagram">
+                                <i class="fab fa-instagram"></i> Instagram
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="card">
-                    <img src="Img/Conteudo/Bloquinho.png" height="264.809px" width="333.056px" alt="Bloquinho">
-                    <div class="titulo">Trattoria De Prima Restaurante E Scotch Bar</div>
-                    <div class="descricao">A Trattoria De Prima Restaurante e Scotch Bar une a autêntica culinária italiana a drinques sofisticados em um ambiente elegante e aconchegante.</div>
-                    <div class="local"> Endereço: Rua Minervino Betônico, 107 - para, Itabira - MG, 35900-036</div>
-                    <div class="local">  Instagram: @trattoriadiprima</div>
-                
                 </div>
             </article>
+        
             <article>
-                <h1>Hoteis</h1>
-                Ps Colocar cards do hotel com foto, local, e numero para contato. 
+                <h1 id="Hoteis">Hoteis</h1>
+                <article>
+                    <div class="card-container">
+                        <div class="card">
+                            <img src="Fontes-Imagens/premiumexhotel.jpg" alt="Foto do Hotel Premium Executive">
+                            <div class="titulo">Premium Executive Hotel</div>
+                            <div class="descricao">Este hotel informal, localizado perto de várias lojas, fica a 10 minutos a pé da estação ferroviária central e a 3 km da Fundação Cultural Carlos Drumond de Andrade.</div>
+                            <div class="telefone">Telefone: (031)3835-8000</div>
+                            <div class="local">Endereço: Av. Ver. Osório Sampaio, 45 - Vila Santa Rosa, Itabira - MG, 35900-700</div>
+                            <div class="local">Instagram: @premiumhotelitabira</div>
+                            <div class="card-buttons">
+                                <a href="https://www.google.com/maps/place/Premium+Executive+Hotel/@-19.6329321,-43.2289947,17z/data=!3m1!4b1!4m6!3m5!1s0xa5a1a6e4f639cb:0xecc4f1d0f1024060!8m2!3d-19.6329321!4d-43.2264198!16s%2Fg%2F1wbg0n5d?entry=ttu&g_ep=EgoyMDI1MDIwNS4xIKXMDSoASAFQAw%3D%3D" target="_blank" class="btn-location">
+                                    <i class="fas fa-map-marker-alt"></i> Localização
+                                </a>
+                                <a href="https://www.instagram.com/premiumhotelitabira/" target="_blank" class="btn-instagram">
+                                    <i class="fab fa-instagram"></i> Instagram
+                                </a>
+                            </div>
+                        </div>
+                
+                        <div class="card">
+                            <img src="Fontes-Imagens/ithotel.jpg" alt="Foto do hotel it">
+                            <div class="titulo">IT Hotel Itabira</div>
+                            <div class="descricao">Em uma rua movimentada, este hotel informal fica a três minutos a pé do Esplanada Mall e a 2 km do Parque Natural Municipal Intellect e da rodovia MG-129. </div>
+                            <div class="telefone">Telefone: (31) 3833-4050</div>
+                            <div class="local">Endereço: Av. Duque de Caxias, 1220 - Esplanada da Estacao</div>
+                            <div class="local">Instagram: @itibirahotel</div>
+                            <div class="card-buttons">
+                                <a href="https://www.google.com/maps/place/IT+Hotel+Itabira/@-19.628846,-43.2285054,17z/data=!3m1!4b1!4m6!3m5!1s0xa5a1a4501c8991:0x610df8e6d45283fa!8m2!3d-19.628846!4d-43.2259305!16s%2Fg%2F11bv3r610k?entry=ttu&g_ep=EgoyMDI1MDIwNS4xIKXMDSoASAFQAw%3D%3D" target="_blank" class="btn-location">
+                                    <i class="fas fa-map-marker-alt"></i> Localização
+                                </a>
+                                <a href="https://www.instagram.com/ititabirahotel/" target="_blank" class="btn-instagram">
+                                    <i class="fab fa-instagram"></i> Instagram
+                                </a>
+                            </div>
+                        </div>
+                
+                        <div class="card">
+                            <img src="Fontes-Imagens/Hotel-Domus-Itabira-Exterior.jpg" alt="Foto do hotel Domus">
+                            <div class="titulo">Hotel Domus</div>
+                            <div class="descricao">Nos hotéis Domus, o conforto está em todos os detalhes: boa localização, equipe treinada, suítes de luxo, estacionamento com manobrista, elevador e recepção com funcionamento 24 horas por dia. Um ambiente acolhedor e confortável, ideal para quem viaja a trabalho ou a passeio</div>
+                            <div class="local">Endereço: R. Malacacheta, 16 - Maj. Lage de Baixo</div>
+                            <div class="local">Instagram: @hoteldomusitabira</div>
+                            <div class="card-buttons">
+                                <a href="https://www.google.com/maps/place/Domus+Hotéis/@-19.6280393,-43.2289511,17z/data=!4m10!1m2!2m1!1sHotel+Domus+instagram+itabira!3m6!1s0xa5a1a41f2e6e6f:0xc4578678afcbf3e2!8m2!3d-19.6307399!4d-43.226763!15sCh1Ib3RlbCBEb211cyBpbnN0YWdyYW0gaXRhYmlyYVofIh1ob3RlbCBkb211cyBpbnN0YWdyYW0gaXRhYmlyYZIBBWhvdGVsmgEjQ2haRFNVaE5NRzluUzBWSlEwRm5TVU5JTURoZlowbG5FQUXgAQD6AQUItAEQMg!16s%2Fg%2F1jmcpfnzp?entry=ttu&g_ep=EgoyMDI1MDIwNS4xIKXMDSoASAFQAw%3D%3D" target="_blank" class="btn-location">
+                                    <i class="fas fa-map-marker-alt"></i> Localização
+                                </a>
+                                <a href="https://www.instagram.com/hoteldomusitabira/" target="_blank" class="btn-instagram">
+                                    <i class="fab fa-instagram"></i> Instagram
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </article> 
             </article>
+            <article>
+                <h1 id="Agenda">Calendário de Eventos - Fevereiro 2025</h1>
+                <table class="calendario">
+                    <thead>
+                        <tr>
+                            <th>Dom</th>
+                            <th>Seg</th>
+                            <th>Ter</th>
+                            <th>Qua</th>
+                            <th>Qui</th>
+                            <th>Sex</th>
+                            <th>Sáb</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="dia-vazio"></td>
+                            <td>1 <br><span class="evento">Festival Gastronômico</span></td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4 <br><span class="evento">Feira de Artesanato</span></td>
+                            <td>5 <br><span class="evento">Show de Samba</span></td>
+                            <td>6 <br><span class="evento">Feira 08:00</span></td>
+                        </tr>
+                        <tr>
+                            <td>7 <br><span class="evento">Exposição de Arte</span></td>
+                            <td>8</td>
+                            <td>9 <br><span class="evento">Concerto de Orquestra</span></td>
+                            <td>10 <br><span class="evento">Festival Gastronômico</span></td>
+                            <td>11</td>
+                            <td>12 <br><span class="evento">Feira de Arte e Cultura</span></td>
+                            <td>13</td>
+                        </tr>
+                        <tr>
+                            <td>14 <br><span class="evento">Festa de Carnaval</span></td>
+                            <td>15</td>
+                            <td>16</td>
+                            <td>17</td>
+                            <td>18</td>
+                            <td>19</td>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                            <td>21</td>
+                            <td>22</td>
+                            <td>23</td>
+                            <td>24</td>
+                            <td>25</td>
+                            <td>26</td>
+                            <td>27</td>
+                        </tr>
+                        <tr>
+                            <td>28</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+            
             
         </main>
     </body>
