@@ -320,7 +320,7 @@ article#Economia p {
 /* Efeito de hover nas células */
 
 .calendario td:hover {
-    background-color: #55968a;
+    background-color: #506d8d;
     color: #fff;
     cursor: pointer;
 }
